@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DoctorCare</title>
+</head>
+
+<body onscroll="onScroll()" class="">
+  <nav id="navigation" class="">
+    <div class="wrapper">
+      <a class="logo" href=""><img src="/assets/logo-light.svg" alt="Logo DoctorCare"></a>
+
+      <div class="menu">
+        <ul>
+          <li><a href="">Início</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Sobre</a></li>
+        </ul>
+        <a class="button" href="">Agende sua consulta</a>
+        <ul class="social-links">
+          <li><a target="_blank" href=""><img src="/assets/social-links/instagram.svg" alt=""></a></li>
+          <li><a target="_blank" href=""><img src="/assets/social-links/facebook.svg" alt=""></a></li>
+          <li><a target="_blank" href=""><img src="/assets/social-links/youtube.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <button
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        class="menu-open"
+        onclick="openMenu()"
+      >
+        <img  src="/assets/menu-icon-light.svg" alt="Ícone de menu">
+      </button>
+
+      <button
+        aria-label="Fechar menu"
+        aria-expanded="true"
+        class="menu-close"
+        onclick="closeMenu()"
+      >
+        <img src="/assets/menu-close.svg" alt="Ícone de menu">
+      </button>
+    
+    </div>
+  </nav>
+
+  <header class="wrapper">
+    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+    <h1>Assistência médica simplificada para todos</h1>
+    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a
+      longo prazo.</p>
+    <button>
+      <img src="/assets/whatsapp.svg" alt="Logo WhatsApp">
+      Agende sua consulta
+    </button>
+    <img class="woman" src="/assets/foto.png" alt="Mulher negra vestindo moletom verde e sorrindo">
+    <div class="stats">
+      <div class="stat">
+        <h3>+3.500</h3>
+        <p>Pacientes atendidos</p>
+      </div>
+      <div class="stat">
+        <h3>+15</h3>
+        <p>Especialistas disponíveis</p>
+      </div>
+      <div class="stat">
+        <h3>+10</h3>
+        <p>Anos no mercado</p>
+      </div>
+    </div>
+  </header>
+  <script src="main.js"></script>
+</body>
+</html>
