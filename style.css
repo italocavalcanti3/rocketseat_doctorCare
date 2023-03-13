@@ -67,10 +67,10 @@ nav.scroll {
   width: 100vw;
 }
 nav.scroll .logo img {
-  content: url("/assets/logo-dark.svg");
+  content: url("./assets/logo-dark.svg");
 }
 nav.scroll .menu-open img {
-  content: url("/assets/menu-icon-dark.svg");
+  content: url("./assets/menu-icon-dark.svg");
 }
 
 header {
@@ -172,7 +172,7 @@ body.menu-expanded .logo {
   z-index: 10;
 }
 body.menu-expanded .logo img {
-  content: url("/assets/logo-dark.svg");
+  content: url("./assets/logo-dark.svg");
 }
 body.menu-expanded .menu-close {
   position: relative;

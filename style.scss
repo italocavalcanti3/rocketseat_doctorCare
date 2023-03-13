@@ -77,11 +77,11 @@ nav.scroll {
   width: 100vw;
 
   .logo img {
-    content: url('/assets/logo-dark.svg');
+    content: url('./assets/logo-dark.svg');
   }
 
   .menu-open img {
-    content: url('/assets/menu-icon-dark.svg');
+    content: url('./assets/menu-icon-dark.svg');
   }
 
 }
@@ -204,7 +204,7 @@ body.menu-expanded {
     z-index: 10;
 
     img {
-      content: url('/assets/logo-dark.svg');
+      content: url('./assets/logo-dark.svg');
     }
   }
 
