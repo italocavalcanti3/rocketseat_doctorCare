@@ -1,6 +1,6 @@
-function onScroll() {
-  const navigation = document.getElementById('navigation');
+const navigation = document.getElementById('navigation');
 
+function onScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");
   } else {
@@ -15,3 +15,21 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu-expanded');
 }
+
+
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+}).reveal(`#home,
+          #home .woman,
+          #home .stat,
+          #services,
+          #services .card,
+          #about,
+          #about img,
+          #contact,
+          #contact button,
+          #footer,
+          #footer .social-links`, { reset: true });

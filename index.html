@@ -12,16 +12,16 @@
   <title>DoctorCare</title>
 </head>
 
-<body onscroll="onScroll()" class="">
-  <nav id="navigation" class="">
+<body onscroll="onScroll()">
+  <nav id="navigation">
     <div class="wrapper">
-      <a class="logo" href=""><img src="./assets/logo-light.svg" alt="Logo DoctorCare"></a>
+      <a class="logo" href="/"><img src="./assets/logo-light.svg" alt="Logo DoctorCare"></a>
 
       <div class="menu">
         <ul>
-          <li><a href="">Início</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Sobre</a></li>
+          <li><a href="#home" onclick="closeMenu()">Início</a></li>
+          <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
+          <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
         </ul>
         <a class="button" href="">Agende sua consulta</a>
         <ul class="social-links">
@@ -31,52 +31,158 @@
         </ul>
       </div>
 
-      <button
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        class="menu-open"
-        onclick="openMenu()"
-      >
-        <img  src="./assets/menu-icon-light.svg" alt="Ícone de menu">
+      <button aria-label="Abrir menu" aria-expanded="false" class="menu-open" onclick="openMenu()">
+        <img src="./assets/menu-icon-light.svg" alt="Ícone de menu">
       </button>
 
-      <button
-        aria-label="Fechar menu"
-        aria-expanded="true"
-        class="menu-close"
-        onclick="closeMenu()"
-      >
+      <button aria-label="Fechar menu" aria-expanded="true" class="menu-close" onclick="closeMenu()">
         <img src="./assets/menu-close.svg" alt="Ícone de menu">
       </button>
-    
+
     </div>
   </nav>
 
-  <header class="wrapper">
-    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-    <h1>Assistência médica simplificada para todos</h1>
-    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a
-      longo prazo.</p>
-    <button>
-      <img src="./assets/whatsapp.svg" alt="Logo WhatsApp">
-      Agende sua consulta
-    </button>
-    <img class="woman" src="./assets/foto.png" alt="Mulher negra vestindo moletom verde e sorrindo">
-    <div class="stats">
-      <div class="stat">
-        <h3>+3.500</h3>
-        <p>Pacientes atendidos</p>
-      </div>
-      <div class="stat">
-        <h3>+15</h3>
-        <p>Especialistas disponíveis</p>
-      </div>
-      <div class="stat">
-        <h3>+10</h3>
-        <p>Anos no mercado</p>
+  <header id="home">
+    <div class="wrapper">
+      <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+      <h1>Assistência médica simplificada para todos</h1>
+      <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a
+        longo prazo.</p>
+      <button class="schedule">
+        <img src="./assets/whatsapp.svg" alt="Logo WhatsApp">
+        Agende sua consulta
+      </button>
+      <img class="woman" src="./assets/foto.png" alt="Mulher negra vestindo moletom verde e sorrindo">
+      <div class="stats">
+        <div class="stat">
+          <h3>+3.500</h3>
+          <p>Pacientes atendidos</p>
+        </div>
+        <div class="stat">
+          <h3>+15</h3>
+          <p>Especialistas disponíveis</p>
+        </div>
+        <div class="stat">
+          <h3>+10</h3>
+          <p>Anos no mercado</p>
+        </div>
       </div>
     </div>
   </header>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Serviços</h4>
+        <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+      </header>
+
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Problemas digestivos</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Saúde Hormonal</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Bem-estar mental</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Cuidados Pediátricos</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Autoimune e Inflamação</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Saúde do Coração</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/check.svg" alt="Ícone de check">
+          <h3>Problemas digestivos</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <h4>Sobre nós</h4>
+      <h2>Entenda quem somos e por que existimos</h2>
+      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+      <img src="./assets/about.png"
+        alt="Homem doutor com jaleco e prancheta na mão com uma criança sendo segurada pela mãe, ambos sorrindo">
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <h2>Entre em contato com a gente!</h2>
+
+      <div class="contacts">
+        <div class="contact">
+          <img src="./assets/map.svg" alt="Ícone de pin de mapa">
+          <p>R. Amauri Souza, 346</p>
+        </div>
+        <div class="contact">
+          <img src="./assets/email.svg" alt="Ícone de email">
+          <p>contato@doctorcare.com</p>
+        </div>
+      </div>
+
+      <button class="schedule">
+        <img src="./assets/whatsapp.svg" alt="Ícone do WhatsApp">
+        Agende sua consulta
+      </button>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="wrapper">
+      <a href="/"><img class="logo" src="./assets/logo-dark.svg" alt="Logo DoctorCare"></a>
+      <div class="copyright">
+        <p>©2021 Beautysalon.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <ul class="social-links">
+        <li><a target="_blank" href=""><img src="./assets/social-links/instagram.svg" alt=""></a></li>
+        <li><a target="_blank" href=""><img src="./assets/social-links/facebook.svg" alt=""></a></li>
+        <li><a target="_blank" href=""><img src="./assets/social-links/youtube.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
