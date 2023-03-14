@@ -12,7 +12,7 @@
   <title>DoctorCare</title>
 </head>
 
-<body onscroll="onScroll()">
+<body>
   <nav id="navigation">
     <div class="wrapper">
       <a class="logo" href="/"><img src="./assets/logo-light.svg" alt="Logo DoctorCare"></a>
@@ -23,7 +23,7 @@
           <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
           <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
         </ul>
-        <a class="button" href="">Agende sua consulta</a>
+        <a class="button" href="https://wa.me/5511977230898?text=Ol%C3%A1!%20Desejo%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento.">Agende sua consulta</a>
         <ul class="social-links">
           <li><a target="_blank" href=""><img src="./assets/social-links/instagram.svg" alt=""></a></li>
           <li><a target="_blank" href=""><img src="./assets/social-links/facebook.svg" alt=""></a></li>
@@ -41,17 +41,17 @@
 
     </div>
   </nav>
-
+  
   <header id="home">
     <div class="wrapper">
       <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
       <h1>Assistência médica simplificada para todos</h1>
       <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a
         longo prazo.</p>
-      <button class="schedule">
+      <a href="https://wa.me/5511977230898?text=Ol%C3%A1!%20Desejo%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento." class="schedule">
         <img src="./assets/whatsapp.svg" alt="Logo WhatsApp">
         Agende sua consulta
-      </button>
+      </a>
       <img class="woman" src="./assets/foto.png" alt="Mulher negra vestindo moletom verde e sorrindo">
       <div class="stats">
         <div class="stat">
@@ -159,19 +159,23 @@
         </div>
       </div>
 
-      <button class="schedule">
+      <a href="https://wa.me/5511977230898?text=Ol%C3%A1!%20Desejo%20mais%20informa%C3%A7%C3%B5es%20sobre%20agendamento." class="schedule">
         <img src="./assets/whatsapp.svg" alt="Ícone do WhatsApp">
         Agende sua consulta
-      </button>
+      </a>
+
+      <img src="./assets/contact.png" alt="Homem negro sentado com celular na mão sorrindo" />
     </div>
   </section>
 
   <footer id="footer">
     <div class="wrapper">
-      <a href="/"><img class="logo" src="./assets/logo-dark.svg" alt="Logo DoctorCare"></a>
-      <div class="copyright">
-        <p>©2021 Beautysalon.</p>
-        <p>Todos os direitos reservados.</p>
+      <div class="footer-info">
+        <a href="/"><img class="logo" src="./assets/logo-dark.svg" alt="Logo DoctorCare"></a>
+        <div class="copyright">
+          <p>©2021 Beautysalon.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
       </div>
       <ul class="social-links">
         <li><a target="_blank" href=""><img src="./assets/social-links/instagram.svg" alt=""></a></li>
@@ -180,6 +184,10 @@
       </ul>
     </div>
   </footer>
+
+  <a class="scrollToTop" href="#home">
+    <img src="./assets/arrow-up.svg" alt="Ícone de rolar para cima">
+  </a>
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
