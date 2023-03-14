@@ -92,6 +92,7 @@ section {
 nav {
   display: flex;
   z-index: 10;
+  width: 100vw;
 
   height: var(--nav-height);
 
@@ -115,7 +116,6 @@ nav {
 
 nav.scroll {
   background: var(--brand-green);
-  width: 100vw;
 
   .logo img {
     content: url('./assets/logo-dark.svg');
@@ -225,11 +225,60 @@ header .wrapper {
 }
 
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--brand-green);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-height);
+
+  transition: transform 0.5s;
+  
   transform: translateY(100%);
+
+  ul:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-top: 6rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .button {
+    background: var(--white);
+    border-radius: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: (var(--brand-green));
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+
+    margin-top: 4.8rem;
+    margin-bottom: 8rem;
+  }
 }
 
 body.menu-expanded {
   overflow: hidden;
+
+  .menu {
+    transform: translateY(0);
+  }
 
   .logo {
     position: relative;
@@ -256,55 +305,6 @@ body.menu-expanded {
   .menu-close {
     visibility: visible;
     opacity: 1;
-  }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--brand-green);
-
-    width: 100vw;
-    height: 100vh;
-
-    padding-top: var(--nav-height);
-
-    transition: transform 0.5s;
-
-    transform: translateY(0);
-
-    ul:nth-child(1) {
-      display: flex;
-      flex-direction: column;
-      gap: 4.8rem;
-
-      margin-top: 6rem;
-
-      font-weight: 700;
-      font-size: 2.4rem;
-      line-height: 3.1rem;
-
-      li a {
-        color: white;
-        text-decoration: none;
-      }
-    }
-
-    .button {
-      background: var(--white);
-      border-radius: 4rem;
-      font-weight: 700;
-      font-size: 1.8rem;
-      line-height: 2.3rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: (var(--brand-green));
-      display: inline-block;
-      padding: 1.6rem 3.2rem;
-
-      margin-top: 4.8rem;
-      margin-bottom: 8rem;
-    }
   }
 }
 
